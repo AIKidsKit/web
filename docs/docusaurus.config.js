@@ -43,7 +43,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'AI Kids Kit',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -79,16 +79,16 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'MakeCode',
+                href: 'https://www.microsoft.com/makecode',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Lobe',
+                href: 'https://www.lobe.ai/',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Learn Computer Science',
+                href: 'https://docs.microsoft.com/en-us/learn/modules/teach-ap-computer-science-principles-makecode/',
               },
             ],
           },
@@ -101,7 +101,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/AIKidsKit',
               },
             ],
           },
