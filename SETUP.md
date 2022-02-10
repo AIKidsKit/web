@@ -1,8 +1,5 @@
 # Setup
 
-[![Azure Static Web Apps CI/CD](https://github.com/AIKidsKit/web/actions/workflows/azure-static-web-apps-polite-wave-072dd570f.yml/badge.svg)](https://github.com/AIKidsKit/web/actions/workflows/azure-static-web-apps-polite-wave-072dd570f.yml)
-
-
 | What | How |
 |:---|:---|
 | **SCAFFOLD SITE** | |
