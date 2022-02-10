@@ -4,67 +4,12 @@ sidebar_position: 17
 
 # Poster
 
----
 
-![](https://via.placeholder.com/1500x1500/4d00d2/fff.png?text=Caption)
+| ![](https://via.placeholder.com/820x700/d3d3d3/3e3e3e.png?text=Topic)| ![](https://via.placeholder.com/820x700/d3d3d3/3e3e3e.png?text=Topic)| ![](https://via.placeholder.com/820x700/d3d3d3/3e3e3e.png?text=Topic)| ![](https://via.placeholder.com/820x700/d3d3d3/3e3e3e.png?text=Topic)|
+|:---|:---|:---|:---|
+| ![](https://via.placeholder.com/820x700/d3d3d3/3e3e3e.png?text=Topic)|![](https://via.placeholder.com/820x700/d3d3d3/3e3e3e.png?text=Topic) | ![](https://via.placeholder.com/820x700/d3d3d3/3e3e3e.png?text=Topic)| ![](https://via.placeholder.com/820x700/d3d3d3/3e3e3e.png?text=Topic)|
+| ![](https://via.placeholder.com/820x700/d3d3d3/3e3e3e.png?text=Topic)|![](https://via.placeholder.com/820x700/d3d3d3/3e3e3e.png?text=Topic) | ![](https://via.placeholder.com/820x700/d3d3d3/3e3e3e.png?text=Topic)| ![](https://via.placeholder.com/820x700/d3d3d3/3e3e3e.png?text=Topic)|
+| ![](https://via.placeholder.com/820x700/d3d3d3/3e3e3e.png?text=Topic)|![](https://via.placeholder.com/820x700/d3d3d3/3e3e3e.png?text=Topic) | ![](https://via.placeholder.com/820x700/d3d3d3/3e3e3e.png?text=Topic)| ![](https://via.placeholder.com/820x700/d3d3d3/3e3e3e.png?text=Topic)|
 
----
-
-![](https://via.placeholder.com/1500x1500/4d00d2/fff.png?text=Caption)
-
----
-
-![](https://via.placeholder.com/1500x1500/4d00d2/fff.png?text=Caption)
-
----
-
-![](https://via.placeholder.com/1500x1500/4d00d2/fff.png?text=Caption)
-
----
-
-![](https://via.placeholder.com/1500x1500/4d00d2/fff.png?text=Caption)
-
----
-
-![](https://via.placeholder.com/1500x1500/4d00d2/fff.png?text=Caption)
-
----
-
-![](https://via.placeholder.com/1500x1500/4d00d2/fff.png?text=Caption)
-
----
-
-![](https://via.placeholder.com/1500x1500/4d00d2/fff.png?text=Caption)
-
----
-
-![](https://via.placeholder.com/1500x1500/4d00d2/fff.png?text=Caption)
-
----
-
-![](https://via.placeholder.com/1500x1500/4d00d2/fff.png?text=Caption)
-
----
-
-![](https://via.placeholder.com/1500x1500/4d00d2/fff.png?text=Caption)
-
----
-
-![](https://via.placeholder.com/1500x1500/4d00d2/fff.png?text=Caption)
-
----
-
-![](https://via.placeholder.com/1500x1500/4d00d2/fff.png?text=Caption)
-
----
-
-![](https://via.placeholder.com/1500x1500/4d00d2/fff.png?text=Caption)
-
----
-
-![](https://via.placeholder.com/1500x1500/4d00d2/fff.png?text=Caption)
-
----
-
-![](https://via.placeholder.com/1500x1500/4d00d2/fff.png?text=Caption)
+![](https://via.placeholder.com/820x100/3e3e3e/d3d3d3.png?text=Caption)
 
