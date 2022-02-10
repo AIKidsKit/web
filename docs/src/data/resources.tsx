@@ -74,59 +74,67 @@ export const Tags: Record<TagType, Tag> = {
 };
 
 
-const Resources: Resource[] = [
+const Data = [
   {
+    id: 1,
     title: 'Machine Learning for Kids',
     description: 'Teach a computer to play a game!',
-    preview: require('../../static/img/resources/temp-resource.png'),
+    img: 'https://i.picsum.photos/id/813/200/200.jpg?hmac=KPqV3ldCcUrVRZi3-HZU491hRCs8AZAagGXxoAomcYU',
     website: 'https://agile-ts.orghttps://machinelearningforkids.co.uk/',
     source: 'https://machinelearningforkids.co.uk/',
     tags: ['teacher', 'parent','kid'],
   },
   {
+    id: 2,
     title: 'Classifying Lacemaking Techniques',
     description: 'Machine Learning for Artisans: Classifying Lacemaking Techniques.',
-    preview: require('../../static/img/resources/temp-resource.png'),
+    img: 'https://i.picsum.photos/id/813/200/200.jpg?hmac=KPqV3ldCcUrVRZi3-HZU491hRCs8AZAagGXxoAomcYU',
     website: 'https://dev.to/azure/machine-learning-for-artisans-classifying-lacemaking-techniques-1g87/',
     source: 'https://dev.to/azure/machine-learning-for-artisans-classifying-lacemaking-techniques-1g87/',
     tags: ['lobe'],
   },
   {
+    id: 3,
     title: 'Scratch',
     description:
       'Scratch is the world’s largest coding community for children.',
-    preview: require('../../static/img/resources/temp-resource.png'),
+    img: 'https://i.picsum.photos/id/813/200/200.jpg?hmac=KPqV3ldCcUrVRZi3-HZU491hRCs8AZAagGXxoAomcYU',
      website: 'https://scratch.mit.edu/about',
     source: 'https://scratch.mit.edu/about',
     tags: ['scratch', 'kid'],
   },
   {
+    id: 4,
     title: 'MakeCode Projects',
     description: 'Cool tutorials to get you started with your micro:bit!',
-    preview: require('../../static/img/resources/temp-resource.png'),
+    img: 'https://i.picsum.photos/id/813/200/200.jpg?hmac=KPqV3ldCcUrVRZi3-HZU491hRCs8AZAagGXxoAomcYU',
     website: 'https://makecode.microbit.org/tutorials',
     source: 'https://makecode.microbit.org/tutorials',
     tags: ['makecode'],
   },
   {
+    id: 5,
     title: 'DAILy Workshop',
     description:
       'The Daily-AI workshop, designed by MIT educators and experienced facilitators, features hands-on and computer-based activities.',
-      preview: require('../../static/img/resources/temp-resource.png'),
+      img: 'https://i.picsum.photos/id/813/200/200.jpg?hmac=KPqV3ldCcUrVRZi3-HZU491hRCs8AZAagGXxoAomcYU',
       website: 'https://raise.mit.edu/daily/index.html',
     source: 'https://raise.mit.edu/daily/index.html',
     tags: ['parent', 'teacher', 'kid'],
   },
   {
+    id: 6,
     title: 'Scratch Tutorials!',
     description:
       'New to Scratch? Not sure how to do something? If you answered \'Yes\' to any of those questions, this studio is for you!',
-      preview: require('../../static/img/resources/temp-resource.png'),
+      img: 'https://i.picsum.photos/id/813/200/200.jpg?hmac=KPqV3ldCcUrVRZi3-HZU491hRCs8AZAagGXxoAomcYU',
       website: 'https://scratch.mit.edu/studios/1817151',
     source: 'https://scratch.mit.edu/studios/1817151',
     tags: ['scratch'],
   },
 ];
+
+export default Data;
 
 // export const TagList = Object.keys(Tags) as TagType[];
 // function sortUsers() {
