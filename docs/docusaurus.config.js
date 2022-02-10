@@ -6,15 +6,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'AI Kids Kit',
+  tagline: 'Artificial Intelligence 101 for kids and their grown-ups',
   url: 'https://polite-wave-072dd570f.1.azurestaticapps.net/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'AIKidsKit', // Usually your GitHub org/user name.
+  projectName: 'web', // Usually your repo name.
 
   presets: [
     [
@@ -46,7 +46,7 @@ const config = {
         title: 'AI Kids Kit',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/ai-logo.png',
         },
         items: [
           {
@@ -56,6 +56,7 @@ const config = {
             label: 'Tutorial',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/about', label: 'About', position: 'left'},
           {
             href: 'https://github.com/AIKidsKit/',
             label: 'GitHub',
@@ -106,7 +107,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Microsoft. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

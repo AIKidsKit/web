@@ -1,17 +1,36 @@
-endi:
-  name: Endilie Yacop Sucipto
-  title: Maintainer of Docusaurus
-  url: https://github.com/endiliey
-  image_url: https://github.com/endiliey.png
+nitya:
+  name: Nitya Narasimhan
+  title: Senior Cloud Advocate
+  url: https://github.com/nitya
+  image_url: https://github.com/nitya.png
 
-yangshun:
-  name: Yangshun Tay
-  title: Front End Engineer @ Facebook
-  url: https://github.com/yangshun
-  image_url: https://github.com/yangshun.png
+jlooper:
+  name: Jen Looper
+  title: Principal Cloud Developer Advocate
+  url: https://github.com/jlooper
+  image_url: https://github.com/jlooper.png
 
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
+shwars:
+  name: Dmitri Soshnikov
+  title: Cloud Developer Advocate
+  url: https://github.com/shwars
+  image_url: https://github.com/shwars.png
+
+Jcardif:
+  name: Josh
+  title: Cloud Developer Advocate
+  url: https://github.com/Jcardif
+  image_url: https://github.com/Jcardif.png
+
+ramiMSFT:
+  name: Rami Bououni
+  title: Content Developer
+  url: https://github.com/ramiMSFT
+  image_url: https://github.com/ramiMSFT.png
+  
+juliakm:
+  name: Julia Kulla-Mader
+  title: Content Developer @ Microsoft
+  url: https://github.com/juliakm
+  image_url: https://github.com/juliakm.png
+
