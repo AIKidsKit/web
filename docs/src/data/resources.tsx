@@ -13,9 +13,10 @@ export type TagType =
   | 'scratch'
   | 'makecode';
 
-export type User = {
+export type Resource = {
   title: string;
   description: string;
+  preview: string;
   website: string;
   source: string | null;
   tags: TagType[];
@@ -77,7 +78,7 @@ const Resources: Resource[] = [
   {
     title: 'Machine Learning for Kids',
     description: 'Teach a computer to play a game!',
-    preview: require('./resources/temp-resource.png'),
+    preview: require('../../static/img/resources/temp-resource.png'),
     website: 'https://agile-ts.orghttps://machinelearningforkids.co.uk/',
     source: 'https://machinelearningforkids.co.uk/',
     tags: ['teacher', 'parent','kid'],
@@ -85,7 +86,7 @@ const Resources: Resource[] = [
   {
     title: 'Classifying Lacemaking Techniques',
     description: 'Machine Learning for Artisans: Classifying Lacemaking Techniques.',
-    preview: require('./resources/temp-resource.png'),
+    preview: require('../../static/img/resources/temp-resource.png'),
     website: 'https://dev.to/azure/machine-learning-for-artisans-classifying-lacemaking-techniques-1g87/',
     source: 'https://dev.to/azure/machine-learning-for-artisans-classifying-lacemaking-techniques-1g87/',
     tags: ['lobe'],
@@ -94,15 +95,15 @@ const Resources: Resource[] = [
     title: 'Scratch',
     description:
       'Scratch is the world’s largest coding community for children.',
-    preview: require('./resources/temp-resource.png'),
-    website: 'https://scratch.mit.edu/about',
+    preview: require('../../static/img/resources/temp-resource.png'),
+     website: 'https://scratch.mit.edu/about',
     source: 'https://scratch.mit.edu/about',
     tags: ['scratch', 'kid'],
   },
   {
     title: 'MakeCode Projects',
     description: 'Cool tutorials to get you started with your micro:bit!',
-    preview: require('./resources/temp-resource.png'),
+    preview: require('../../static/img/resources/temp-resource.png'),
     website: 'https://makecode.microbit.org/tutorials',
     source: 'https://makecode.microbit.org/tutorials',
     tags: ['makecode'],
@@ -111,8 +112,8 @@ const Resources: Resource[] = [
     title: 'DAILy Workshop',
     description:
       'The Daily-AI workshop, designed by MIT educators and experienced facilitators, features hands-on and computer-based activities.',
-    preview: require('./resources/temp-resource.png'),
-    website: 'https://raise.mit.edu/daily/index.html',
+      preview: require('../../static/img/resources/temp-resource.png'),
+      website: 'https://raise.mit.edu/daily/index.html',
     source: 'https://raise.mit.edu/daily/index.html',
     tags: ['parent', 'teacher', 'kid'],
   },
@@ -120,22 +121,22 @@ const Resources: Resource[] = [
     title: 'Scratch Tutorials!',
     description:
       'New to Scratch? Not sure how to do something? If you answered \'Yes\' to any of those questions, this studio is for you!',
-    preview: require('./resources/temp-resource.png'),
-    website: 'https://scratch.mit.edu/studios/1817151',
+      preview: require('../../static/img/resources/temp-resource.png'),
+      website: 'https://scratch.mit.edu/studios/1817151',
     source: 'https://scratch.mit.edu/studios/1817151',
     tags: ['scratch'],
   },
 ];
 
-export const TagList = Object.keys(Tags) as TagType[];
-function sortUsers() {
-  let result = <Resources></Resources>;
-  // Sort by site name
-  result = sortBy(result, resource) => resource.title.toLowerCase());
-  // Sort by favorite tag, favorites first
-  result = sortBy(result, (resource) => !resource.tags.includes('favorite'));
-  return result;
-}
+// export const TagList = Object.keys(Tags) as TagType[];
+// function sortUsers() {
+//   let result = <Resources></Resources>;
+//   // Sort by site name
+//   result = sortBy(result, resource); => resource.title.toLowerCase());
+//   // Sort by favorite tag, favorites first
+//   result = sortBy(result, (resource) => !resource.tags.includes('favorite'));
+//   return result;
+// }
 
 // Source: https://github.com/facebook/docusaurus
 export function sortBy<T>(
