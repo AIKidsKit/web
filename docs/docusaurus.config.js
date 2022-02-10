@@ -51,7 +51,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'concepts/1',
+            docId: 'learn',
             position: 'left',
             label: 'Learn',
           },
@@ -68,41 +68,29 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Learn Concepts',
-                to: '/docs/concepts',
-              },
-            ],
-          },
-          {
-            title: 'Community',
+            title: 'Kids Corner',
             items: [
               {
                 label: 'MakeCode',
                 href: 'https://www.microsoft.com/makecode',
               },
+            ],
+          },
+          {
+            title: 'Parents Corner',
+            items: [
               {
-                label: 'Lobe',
+                label: 'Lobe.AI',
                 href: 'https://www.lobe.ai/',
-              },
-              {
-                label: 'Learn Computer Science',
-                href: 'https://docs.microsoft.com/en-us/learn/modules/teach-ap-computer-science-principles-makecode/',
               },
             ],
           },
           {
-            title: 'More',
+            title: 'Teachers Corner',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/AIKidsKit',
+                label: 'Learn CS',
+                href: 'https://docs.microsoft.com/en-us/learn/modules/teach-ap-computer-science-principles-makecode/',
               },
             ],
           },

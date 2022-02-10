@@ -4,32 +4,35 @@ import styles from './HomepageFeatures.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Learn Concepts',
+    Svg: require('../../static/img/learn.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Explore <b><a href="/docs/learn">AI Concepts </a></b> using fun characters and 
+        visual assets! Engage kids' attention and
+        have meaningful conversations.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Train Models',
+    Svg: require('../../static/img/train.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Use <b><a href="/docs/lobeai">Lobe.AI </a></b>
+        to build your own image classifier - with no code! 
+        Export your model, integrate it in apps, test it with real users!
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+    title: 'Build Apps',
+    Svg: require('../../static/img/build.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Help kids bring models to life with block-based programs in
+        <b><a href="/docs/makecode"> Make Code</a></b> - 
+        or try out our templates for mobile and web apps.
       </>
     ),
   },
