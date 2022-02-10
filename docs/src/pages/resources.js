@@ -12,7 +12,7 @@ function Resources() {
       <div
         style={{
         //   display: 'flex',
-        //   justifyContent: 'center',
+          justifyContent: 'center',
         //   alignItems: 'center',
         //   height: '50vh',
         //   fontSize: '14px',
