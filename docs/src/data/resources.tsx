@@ -8,97 +8,162 @@ export type Tag = {
 
 export type TagType =
   | 'favorite'
-  | 'opensource'
-  | 'product'
-  | 'design'
-  | 'i18n'
-  | 'versioning'
-  | 'large'
-  | 'meta'
-  | 'personal'
-  | 'rtl';
+  | 'parent'
+  | 'kid'
+  | 'teacher'
+  | 'lobe'
+  | 'scratch'
+  | 'makecode';
 
 export type User = {
   title: string;
   description: string;
-  preview: string;
   website: string;
   source: string | null;
   tags: TagType[];
 };
 
 // LIST OF AVAILABLE TAGS
-// Available tags to assign to your site
-// Please choose all tags that you think might apply.
-// We'll remove inappropriate tags, but it's less likely that we add tags.
 export const Tags: Record<TagType, Tag> = {
   // DO NOT USE THIS TAG: we choose sites to add to favorites
   favorite: {
     label: 'Favorite',
     description:
-      'Our favorite Docusaurus sites that you must absolutely check-out!',
-    color: '#e9669e',
+      'Our favorite resources!',
+    color: '#D60079',
   },
 
   // For open-source sites, a link to the source code is required
-  opensource: {
-    label: 'Open-Source',
-    description: 'Open-Source Docusaurus sites can be useful for inspiration!',
-    color: '#39ca30',
+  parent: {
+    label: 'Parent',
+    description: 'Resources for parents!',
+    color: '#ff7029',
   },
 
-  product: {
-    label: 'Product',
-    description: 'Docusaurus sites associated to a commercial product!',
-    color: '#dfd545',
-  },
-
-  design: {
-    label: 'Design',
+  kid: {
+    label: 'Kids',
     description:
-      'Beautiful Docusaurus sites, polished and standing out from the initial template!',
-    color: '#a44fb7',
+      'Resources for kids!',
+    color: '#4D00D2',
   },
 
-  i18n: {
-    label: 'I18n',
+  teacher: {
+    label: 'Teachers',
     description:
-      'Translated Docusaurus sites using the internationalization support with more than 1 locale.',
-    color: '#127f82',
+      'Resources for teachers!',
+    color: '#FFC629',
   },
 
-  versioning: {
-    label: 'Versioning',
+  lobe: {
+    label: 'Lobe AI',
     description:
-      'Docusaurus sites using the versioning feature of the docs plugin to manage multiple versions.',
-    color: '#fe6829',
+      'Resources for using Lobe AI.',
+    color: '#1282A2',
   },
-
-  // Large sites, with a lot of content (> 200 pages, excluding versions)
-  large: {
-    label: 'Large',
+  scratch: {
+    label: 'Scratch',
     description:
-      'Very large Docusaurus sites, including many more pages than the average!',
-    color: '#8c2f00',
+      'Resources for getting started with Scratch!',
+    color: '#F8AC3D',
   },
 
-  meta: {
-    label: 'Meta',
-    description: 'Docusaurus sites of Meta (formerly Facebook) projects',
-    color: '#4267b2', // Facebook blue
-  },
-
-  personal: {
-    label: 'Personal',
-    description:
-      'Personal websites, blogs and digital gardens built with Docusaurus',
-    color: '#14cfc3',
-  },
-
-  rtl: {
-    label: 'RTL Direction',
-    description:
-      'Docusaurus sites using the right-to-left reading direction support.',
-    color: '#ffcfc3',
+  makecode: {
+    label: 'MakeCode',
+    description: 'Resource for getting started with MakeCode!',
+    color: '#ac2790', 
   },
 };
+
+
+const Users: User[] = [
+  {
+    title: 'Aide Jeune',
+    description:
+      'French Discord server that helps young people who have been bullied or feel bad about themselves',
+    preview: require('./showcase/aide_jeune.png'),
+    website: 'https://aidejeune.fr',
+    source: 'https://github.com/AideJeune',
+    tags: ['opensource'],
+  },
+  {
+    title: 'AgileTs',
+    description: 'Global State and Logic Framework for reactive Applications',
+    preview: require('./showcase/agilets.png'),
+    website: 'https://agile-ts.org/',
+    source: 'https://github.com/agile-ts/documentation',
+    tags: ['opensource', 'design'],
+  },
+  {
+    title: 'AI-Speaker',
+    description: 'Local, reliable, fast and private Audio and IoT gate.',
+    preview: require('./showcase/aispeaker.png'),
+    website: 'https://ai-speaker.com/',
+    source: 'https://github.com/sviete/AIS-WWW',
+    tags: ['opensource'],
+  },
+  {
+    title: 'Algolia Docsearch',
+    description:
+      'The best search experience for docs, integrates in minutes, for free',
+    preview: require('./showcase/algolia.png'),
+    website: 'https://docsearch.algolia.com/',
+    source: 'https://github.com/algolia/docsearch-website',
+    tags: ['favorite', 'opensource', 'product'],
+  },
+  // TODO site unavailable on 12/31/2021
+  {
+    title: 'Amphora Data',
+    description: 'Connecting the world’s real-time information',
+    preview: require('./showcase/amphora.png'),
+    website: 'https://www.amphoradata.com/',
+    source: 'https://github.com/amphoradata/amphoradata.github.io',
+    tags: ['opensource', 'product'],
+  },
+  {
+    title: 'Apache APISIX',
+    description:
+      'A Dynamic, Real-Time, High-Performance Cloud-Native API Gateway',
+    preview: require('./showcase/apache-apisix.png'),
+    website: 'https://apisix.apache.org/',
+    source: 'https://github.com/apache/apisix-website',
+    tags: ['opensource', 'i18n', 'large'],
+  },
+  {
+    title: 'Apex FP',
+    description: 'Functional programming library for Salesforce Apex',
+    preview: require('./showcase/apexfp.png'),
+    website: 'https://www.apexfp.org',
+    source: 'https://github.com/ipavlic/apex-fp/tree/master/website',
+    tags: ['opensource'],
+  },
+  {
+    title: 'Astronomer',
+    description:
+      'Enterprise-grade framework for Apache Airflow. Production-ready Airflow environments with just a few clicks',
+    preview: require('./showcase/astronomer.png'),
+    website: 'https://docs.astronomer.io',
+    source: 'https://github.com/astronomer/docs',
+    tags: ['product', 'versioning', 'opensource'],
+  },
+  {
+    title: 'AttoBot',
+    description:
+      'A multi-purpose Discord bot with many features and API integrations that will enhance your Discord experience.',
+    preview: require('./showcase/attobot.png'),
+    website: 'https://attobot.xyz',
+    source: 'https://github.com/attobot-discord/website',
+    tags: ['opensource'],
+  },
+];
+
+export const TagList = Object.keys(Tags) as TagType[];
+function sortUsers() {
+  let result = <Resources></Resources>;
+  // Sort by site name
+  result = sortBy(result, resource) => resource.title.toLowerCase());
+  // Sort by favorite tag, favorites first
+  result = sortBy(result, (resource) => !resource.tags.includes('favorite'));
+  return result;
+}
+
+export const sortedResources = sortResources();
