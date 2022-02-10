@@ -1,5 +1,3 @@
-//import {sortBy} from '@site/src/utils/jsUtils';
-
 export type Tag = {
   label: string;
   description: string;
@@ -75,84 +73,57 @@ export const Tags: Record<TagType, Tag> = {
 };
 
 
-const Users: User[] = [
+const Resources: Resource[] = [
   {
-    title: 'Aide Jeune',
+    title: 'Machine Learning for Kids',
+    description: 'Teach a computer to play a game!',
+    preview: require('./resources/temp-resource.png'),
+    website: 'https://agile-ts.orghttps://machinelearningforkids.co.uk/',
+    source: 'https://machinelearningforkids.co.uk/',
+    tags: ['teacher', 'parent','kid'],
+  },
+  {
+    title: 'Classifying Lacemaking Techniques',
+    description: 'Machine Learning for Artisans: Classifying Lacemaking Techniques.',
+    preview: require('./resources/temp-resource.png'),
+    website: 'https://dev.to/azure/machine-learning-for-artisans-classifying-lacemaking-techniques-1g87/',
+    source: 'https://dev.to/azure/machine-learning-for-artisans-classifying-lacemaking-techniques-1g87/',
+    tags: ['lobe'],
+  },
+  {
+    title: 'Scratch',
     description:
-      'French Discord server that helps young people who have been bullied or feel bad about themselves',
-    preview: require('./showcase/aide_jeune.png'),
-    website: 'https://aidejeune.fr',
-    source: 'https://github.com/AideJeune',
-    tags: ['opensource'],
+      'Scratch is the world’s largest coding community for children.',
+    preview: require('./resources/temp-resource.png'),
+    website: 'https://scratch.mit.edu/about',
+    source: 'https://scratch.mit.edu/about',
+    tags: ['scratch', 'kid'],
   },
   {
-    title: 'AgileTs',
-    description: 'Global State and Logic Framework for reactive Applications',
-    preview: require('./showcase/agilets.png'),
-    website: 'https://agile-ts.org/',
-    source: 'https://github.com/agile-ts/documentation',
-    tags: ['opensource', 'design'],
+    title: 'MakeCode Projects',
+    description: 'Cool tutorials to get you started with your micro:bit!',
+    preview: require('./resources/temp-resource.png'),
+    website: 'https://makecode.microbit.org/tutorials',
+    source: 'https://makecode.microbit.org/tutorials',
+    tags: ['makecode'],
   },
   {
-    title: 'AI-Speaker',
-    description: 'Local, reliable, fast and private Audio and IoT gate.',
-    preview: require('./showcase/aispeaker.png'),
-    website: 'https://ai-speaker.com/',
-    source: 'https://github.com/sviete/AIS-WWW',
-    tags: ['opensource'],
-  },
-  {
-    title: 'Algolia Docsearch',
+    title: 'DAILy Workshop',
     description:
-      'The best search experience for docs, integrates in minutes, for free',
-    preview: require('./showcase/algolia.png'),
-    website: 'https://docsearch.algolia.com/',
-    source: 'https://github.com/algolia/docsearch-website',
-    tags: ['favorite', 'opensource', 'product'],
-  },
-  // TODO site unavailable on 12/31/2021
-  {
-    title: 'Amphora Data',
-    description: 'Connecting the world’s real-time information',
-    preview: require('./showcase/amphora.png'),
-    website: 'https://www.amphoradata.com/',
-    source: 'https://github.com/amphoradata/amphoradata.github.io',
-    tags: ['opensource', 'product'],
+      'The Daily-AI workshop, designed by MIT educators and experienced facilitators, features hands-on and computer-based activities.',
+    preview: require('./resources/temp-resource.png'),
+    website: 'https://raise.mit.edu/daily/index.html',
+    source: 'https://raise.mit.edu/daily/index.html',
+    tags: ['parent', 'teacher', 'kid'],
   },
   {
-    title: 'Apache APISIX',
+    title: 'Scratch Tutorials!',
     description:
-      'A Dynamic, Real-Time, High-Performance Cloud-Native API Gateway',
-    preview: require('./showcase/apache-apisix.png'),
-    website: 'https://apisix.apache.org/',
-    source: 'https://github.com/apache/apisix-website',
-    tags: ['opensource', 'i18n', 'large'],
-  },
-  {
-    title: 'Apex FP',
-    description: 'Functional programming library for Salesforce Apex',
-    preview: require('./showcase/apexfp.png'),
-    website: 'https://www.apexfp.org',
-    source: 'https://github.com/ipavlic/apex-fp/tree/master/website',
-    tags: ['opensource'],
-  },
-  {
-    title: 'Astronomer',
-    description:
-      'Enterprise-grade framework for Apache Airflow. Production-ready Airflow environments with just a few clicks',
-    preview: require('./showcase/astronomer.png'),
-    website: 'https://docs.astronomer.io',
-    source: 'https://github.com/astronomer/docs',
-    tags: ['product', 'versioning', 'opensource'],
-  },
-  {
-    title: 'AttoBot',
-    description:
-      'A multi-purpose Discord bot with many features and API integrations that will enhance your Discord experience.',
-    preview: require('./showcase/attobot.png'),
-    website: 'https://attobot.xyz',
-    source: 'https://github.com/attobot-discord/website',
-    tags: ['opensource'],
+      'New to Scratch? Not sure how to do something? If you answered \'Yes\' to any of those questions, this studio is for you!',
+    preview: require('./resources/temp-resource.png'),
+    website: 'https://scratch.mit.edu/studios/1817151',
+    source: 'https://scratch.mit.edu/studios/1817151',
+    tags: ['scratch'],
   },
 ];
 
@@ -166,4 +137,17 @@ function sortUsers() {
   return result;
 }
 
-export const sortedResources = sortResources();
+// Source: https://github.com/facebook/docusaurus
+export function sortBy<T>(
+  array: T[],
+  getter: (item: T) => string | number | boolean,
+): T[] {
+  const sortedArray = [...array];
+  sortedArray.sort((a, b) =>
+    // eslint-disable-next-line no-nested-ternary
+    getter(a) > getter(b) ? 1 : getter(b) > getter(a) ? -1 : 0,
+  );
+  return sortedArray;
+}
+
+
