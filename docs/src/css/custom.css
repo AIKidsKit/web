@@ -16,6 +16,14 @@
   --ifm-code-font-size: 95%;
 } */
 
+@font-face {
+  font-family: 'Asterix';
+  src: url('../font/asterix-webfont.woff2') format('woff2'),
+       url('../font/asterix-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
 :root {
   --ifm-color-primary: #4d00d2;
   --ifm-color-primary-dark: #4000af;
@@ -54,8 +62,7 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 }
 
 .navbar a {
-  color:rgba(248, 239, 239, 0.938);
-  text-decoration: none;
+  color:rgba(248, 239, 239, 0.938)
 }
 
 .footer {
@@ -63,10 +70,10 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   color:rgba(0, 0, 0, 0.1);
 }
 
-.footer a {
-  text-decoration: none;
-}
-
 div.footer__copyright {
   color:rgba(248, 239, 239, 0.938);
+}
+
+h1, h2, h3, .navbar, .footer, .footer__title {
+  font-family: 'Asterix', Arial, sans-serif;;
 }
