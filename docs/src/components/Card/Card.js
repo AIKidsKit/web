@@ -1,16 +1,19 @@
 import React from "react";
-import 'bootstrap/dist/css/bootstrap.css';
+
+// Terrible, terrible idea but at least the styles aren't clashing anymore
+import '../../../src/css/bootstrap/scss/bootstrap.scss'
+
 //REQUIRES  npm install --save reactstrap bootstrap@4
-import { Button } from "react-bootstrap";
+import { Card, Button } from "reactstrap";
 
 
 
-const Card = ({ item }) => {            
+const CardItem = ({ item }) => {            
            // destructuring props
   return (
     <>
       {/* <div className="container-fluid"> */}
-        <div className="row justify-content-center text-center">
+        <div className="row justify-content-center text-center local-bootstrap">
           {item.map((Val) => {
             return (
               <div
@@ -45,4 +48,4 @@ const Card = ({ item }) => {
   );
 };
  
-export default Card;
+export default CardItem;

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Layout from '@theme/Layout';
 import Data from '../data/resources'; 
 import Card from '../components/Card/Card';
-import { Button, Cards } from "react-bootstrap";
 
 function Resources() {
 
