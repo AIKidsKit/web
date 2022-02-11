@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { Button } from "react-bootstrap";
 
 
- 
+
 const Card = ({ item }) => {            
            // destructuring props
   return (
@@ -25,8 +25,16 @@ const Card = ({ item }) => {
                     <a href={Val.website}>{Val.title}</a>
                   </div>
                   <div className="card-text">{Val.description}</div>
+                  {/* <div className="card-text">{Val.tags}</div> */}
                   <br />
-                  <Button href={Val.website}>Visit</Button>
+
+                   <div class="d-grid gap-2 d-md-flex">
+                  {
+                    Val.tags.map(function(tag){
+                    return <Button href={tag} class="btn-sm"> {tag}</Button>
+                    })
+                }
+                </div>
                 </div>
               </div>
             );
