@@ -56,6 +56,7 @@ const config = {
             label: 'Learn',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/resources', label: 'Resources', position: 'left'},
           {to: '/about', label: 'About', position: 'left'},
           {
             href: 'https://github.com/AIKidsKit/',
