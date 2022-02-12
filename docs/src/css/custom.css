@@ -77,3 +77,18 @@ div.footer__copyright {
 h1, h2, h3, .navbar, .footer, .footer__title {
   font-family: 'Asterix', Arial, sans-serif;;
 }
+
+.frame-div {
+  position:relative;
+  height:0;
+  padding-bottom:117.6%;
+  overflow:hidden;
+}
+
+.frame {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
