@@ -23,5 +23,3 @@ What does this have?
 
 ## Teachers Corner
 
-Goals for the lesson:
-- 
