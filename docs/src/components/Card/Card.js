@@ -1,10 +1,12 @@
 import React from "react";
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 // Terrible, terrible idea but at least the styles aren't clashing anymore
 import '../../../src/css/bootstrap/scss/bootstrap.scss'
 
 //REQUIRES  npm install --save reactstrap bootstrap@4
 import { Card, Button } from "reactstrap";
+import { Tags } from "../../data/resources";
 
 
 
@@ -13,11 +15,11 @@ const CardItem = ({ item }) => {
   return (
     <>
       {/* <div className="container-fluid"> */}
-        <div className="row justify-content-center text-center local-bootstrap">
+        <div className="row card-deck local-bootstrap">
           {item.map((Val) => {
             return (
               <div
-              className="col-md-4 col-sm-6 card my-3 py-3 border-0"
+              className="col-md-4 col-sm-6 card my-3 py-3 border=0"
               key={Val.id}
               >
                 <div className="card-img-top text-center">
@@ -31,11 +33,10 @@ const CardItem = ({ item }) => {
                   {/* <div className="card-text">{Val.tags}</div> */}
                   <br />
 
-                   <div class="d-grid gap-2 d-md-flex">
+                   <div className="d-grid gap-2 d-md-flex">
                   {
-                    Val.tags.map(function(tag){
-                    return <Button href={tag} class="btn-sm"> {tag}</Button>
-                    })
+                     <Button className="btn-sm"> {Val.tags}</Button>
+                   
                 }
                 </div>
                 </div>
