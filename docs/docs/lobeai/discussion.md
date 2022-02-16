@@ -1,8 +1,8 @@
 ---
-sidebar_position: 18
+sidebar_position: 8
 ---
 
-# Discussion
+# 8. Discussions
 
 | ![](https://via.placeholder.com/820x700/d3d3d3/3e3e3e.png?text=Topic)| Parent: _What do you think about X?_ <br/><br/> Child: _I think ..._ |
 |:---|:---|
