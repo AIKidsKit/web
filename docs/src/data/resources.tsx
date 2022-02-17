@@ -91,7 +91,7 @@ const Data = [
     img: 'img/resources/dev.to.png',
     website: 'https://dev.to/azure/machine-learning-for-artisans-classifying-lacemaking-techniques-1g87/',
     source: 'https://dev.to/azure/machine-learning-for-artisans-classifying-lacemaking-techniques-1g87/',
-    tags: 'lobe',
+    tags: 'parent',
   },
   {
     id: 3,
@@ -101,7 +101,7 @@ const Data = [
     img: 'img/resources/scratch.png',
      website: 'https://scratch.mit.edu/about',
     source: 'https://scratch.mit.edu/about',
-    tags: 'scratch',
+    tags: 'kid',
   },
   {
     id: 4,
@@ -110,7 +110,7 @@ const Data = [
     img: 'img/resources/makecode.png',
     website: 'https://makecode.microbit.org/tutorials',
     source: 'https://makecode.microbit.org/tutorials',
-    tags: 'makecode',
+    tags: 'kid',
   },
   {
     id: 5,
@@ -130,11 +130,12 @@ const Data = [
       img: 'img/resources/scratch-tutorials.png',
       website: 'https://scratch.mit.edu/studios/1817151',
     source: 'https://scratch.mit.edu/studios/1817151',
-    tags: 'scratch',
+    tags: 'kid',
   },
 ];
 
 export default Data;
+
 
 // export const TagList = Object.keys(Tags) as TagType[];
 // function sortUsers() {

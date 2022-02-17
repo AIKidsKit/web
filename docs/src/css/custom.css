@@ -92,3 +92,8 @@ h1, h2, h3, .navbar, .footer, .footer__title {
   width:100%;
   height:100%;
 }
+
+.body-resources {
+  padding: 5% 10%;
+}
+

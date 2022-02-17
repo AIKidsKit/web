@@ -28,8 +28,7 @@ function Resources() {
           fontSize: '14px',
         }}>
     <>
-      <div className="container-fluid testing">
-      <h1>Resources</h1>
+      <div className="container-fluid testing body-resources">
 
       <Buttons
             filterItem={filterItem}
