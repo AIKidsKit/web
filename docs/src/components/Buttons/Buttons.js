@@ -20,7 +20,7 @@ const Buttons = ({ filterItem, setItem, tagItems }) => {
           className="btn-dark text-white p-1 px-3 mx-5 fw-bold btn"
           onClick={() => setItem(Data)}
         >
-          All
+          all
         </button> 
        </div>
     </>
